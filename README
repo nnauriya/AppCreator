@@ -1,0 +1,87 @@
+# Agentic AI Solution Architect 🤖
+
+[![Project Status: Active][status-shield]][status-url]
+[![License: MIT][license-shield]][license-url]
+[![Python Version: 3.9+][python-shield]][python-url]
+
+An interactive MVP that transforms a high-level project objective into a complete technical blueprint, including framework recommendations, tool discovery, solution diagrams, and boilerplate code using Agentic AI workflows.
+
+## 🚀 About The Project
+
+This tool is designed to bridge the gap between a business idea and its technical implementation. By answering a series of simple, business-focused questions, users can instantly generate a detailed project plan, reducing research time and accelerating development kickoff.
+
+It acts as an AI-powered co-pilot for project managers, solution architects, and developers to rapidly prototype and validate software concepts.
+
+**(Add a GIF or screenshot of the application in action here)**
+![App Demo](./docs/demo.gif)
+
+---
+
+## ✨ Key Features
+
+This application guides you through a 7-step process to build your solution blueprint:
+
+* **1️⃣ Define Project Objective:** Answer 6 key business questions (What, Who, Why, Where, When, What Output) to establish a clear project scope.
+* **2️⃣ Validate AI Framework:** Choose a preferred agentic framework (e.g., LangGraph, CrewAI) and get an AI-powered validation or a better suggestion with a clear justification.
+* **3️⃣ Discover Required Tools:** Automatically identify the internal (built-in) and external (third-party) tools and libraries needed for your project.
+* **4️⃣ Analyze External Tools:** Receive a detailed breakdown of external tools, including their cost, features, and open-source alternatives.
+* **5️⃣ Compare Frameworks:** Get a side-by-side comparison of your initial framework choice vs. the AI's suggestion across 7 critical benchmarks (time, cost, quality, etc.).
+* **6️⃣ Generate Solution Diagram:** Instantly visualize your project's architecture with a dynamically generated block diagram.
+* **7️⃣ Generate Project Code:** Produce a complete, runnable boilerplate code for your project in your chosen programming language, including a `README.md` and `requirements.txt`.
+
+---
+
+## 🛠️ Technology Stack
+
+* **Frontend:** [Streamlit](https://streamlit.io/) - For the interactive web interface.
+* **AI Engine:** [Groq](https://groq.com/) API with [Llama 3](https://llama.meta.com/llama3/) models - For high-speed LLM inference.
+* **Backend:** [Python](https://www.python.org/)
+* **Diagramming:** [Mermaid.js](https://mermaid.js.org/) - For rendering dynamic diagrams.
+* **Environment Management:** [python-dotenv](https://pypi.org/project/python-dotenv/)
+
+---
+
+## 🏁 Getting Started
+
+Follow these instructions to get a copy of the project up and running on your local machine.
+
+### Prerequisites
+
+* Python 3.9 or higher
+* An API key from [Groq](https://console.groq.com/keys)
+
+### Installation
+
+1.  **Clone the repository:**
+    ```bash
+    git clone [https://github.com/your-username/your-repo-name.git](https://github.com/your-username/your-repo-name.git)
+    cd your-repo-name
+    ```
+2.  **Create and activate a virtual environment (recommended):**
+    ```bash
+    # For Windows
+    python -m venv venv
+    .\venv\Scripts\activate
+
+    # For macOS/Linux
+    python3 -m venv venv
+    source venv/bin/activate
+    ```
+3.  **Install the required packages:**
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+### Configuration
+
+1.  Create a file named `.env` in the root of your project directory.
+2.  Add your Groq API key to the `.env` file:
+    ```ini
+    GROQ_API_KEY="gsk_YourSecretKeyGoesHere"
+    ```
+
+### Running the Application
+
+Launch the Streamlit app with the following command:
+```bash
+streamlit run main.py
